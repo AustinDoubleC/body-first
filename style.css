@@ -13,6 +13,10 @@ body {
   height: 300px;
 }
 
+.navbar-nav {
+  align-items: baseline;
+}
+
 @media (max-width: 767px) {
   .carousel-inner .carousel-item > div {
     display: none;

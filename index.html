@@ -27,13 +27,42 @@
           <li class="nav-item mx-2">
             <a class="nav-link" href="#">Plans</a>
           </li>
+          <li>
+            <h6 data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom offcanvas</h6>
+          </li>
+          
         </ul>
       </div>
     </div>
   </nav>
+  
+<div class="offcanvas offcanvas-bottom bg-dark text-light" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" style="height:400px">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body small">
+    ...
+  </div>
+</div>
   <!--Login-->
   <div class="container-xl bg-dark text-light">
-    Login
+    <div id="login-container">
+      <h3>Member Login</h3>
+      <div id="login-inner">
+          <div id="form-container">
+              <input type="email"placeholder="email" id="email"/>
+              <input type="password" placeholder="password" id="password">
+              <button id="btn-login">Login</button>
+              <p id="error-message"></p>
+          </div>
+          <div id="joinus-container">
+              <p>Not a member yet?</p>
+              <button onclick="register()">Join us</button>
+          </div>
+          
+      </div>
+  </div>
   </div>
 
   <!--Programs-->
@@ -239,6 +268,9 @@
 </div>
 <!--footer-->
 <footer>Copyright Austin Cheung 2022</footer>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
