@@ -4,33 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <link href="./style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   <title>Body First</title>
 </head>
 <body>
-  <nav class="navbar px-2 sticky-top navbar-expand-md bg-warning">
+  <nav class="navbar px-2 sticky-top navbar-expand-md bg-primary navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Body First</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse mx-5" id="navbarNav">
+      <div class="collapse navbar-collapse mx-5 justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item mx-2">
+          <li class="nav-item mx-5">
             <a class="nav-link" href="#">Home</a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item mx-5">
             <a class="nav-link" href="#">Programs</a>
           </li>
-          <li class="nav-item mx-2">
+          <li class="nav-item mx-5">
+            <h6 data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Result</h6>
+          </li>
+          <li class="nav-item mx-5">
             <a class="nav-link" href="#">Plans</a>
           </li>
-          <li>
-            <h6 data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom offcanvas</h6>
-          </li>
-          
         </ul>
       </div>
     </div>
@@ -46,7 +44,7 @@
   </div>
 </div>
   <!--Login-->
-  <div class="container-xl bg-dark text-light">
+  <div class="container-xl bg-dark text-light welcome-container">
     <div id="login-container">
       <h3>Member Login</h3>
       <div id="login-inner">
@@ -66,22 +64,24 @@
   </div>
 
   <!--Programs-->
-  <div class="container-xl bg-dark text-light">
-  <nav>
-    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+  <div class="d-flex align-items-start container-xl my-5 bg-dark">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+      <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false" disabled>Disabled</button>
+      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
     </div>
-  </nav>
-  <div class="tab-content" id="nav-tabContent" style="height: 300px;">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Home</div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Profile</div>
-    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Contact</div>
+    <div class="tab-content text-light" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit odio numquam harum eum illo consequatur amet ipsam maiores quaerat hic.</div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+      <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+    </div>
   </div>
-</div>
 <!--Plans-->
-<div class="container-xl bg-dark text-light">
+<div class="container-xl bg-primary text-dark">
 <div class="row justify-content-center">
   <div class="col-md-3 align-self-center">
     <div class="card normal-plan">
@@ -93,11 +93,15 @@
     </div>
   </div>
   <div class="col-md-4">
-    <div class="card premium-plan align-self-center">
+    <div class="card premium-plan align-self-center text-center">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <ul class="text-start">
+          <li>abc</li>
+          <li>bbb</li>
+        </ul>
+        <p class="card-text text-start">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary align-self-center">Go somewhere</a>
       </div>
     </div>
   </div>
@@ -113,70 +117,82 @@
 </div>
 </div>
   <!--comments-->
-  <div class="container text-center my-3 bg-dark text-light">
-    <h2 class="font-weight-light">Customer review</h2>
+  <div class="container my-3 bg-dark text-light">
+    <h2 class="font-weight-light text-center">Customer review</h2>
     <div class="row mx-auto my-auto justify-content-center">
         <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="https://via.placeholder.com/500x400/31f?text=1" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 1</div>
-                        </div>
+                  <div class="col-md-3 px-3">
+                    <div class="card bg-dark">
+                      <div class="text-center d-flex align-items-baseline mb-1">
+                        <h5 class="card-title">John Doe</h5>
+                        <h6 class="card-subtitle text-muted ms-2">Nottingham, 36</h6>
+                      </div>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nesciunt nam doloribus sed pariatur ad iure nemo illum ratione, debitis ipsum delectus alias nisi placeat!
+                      </p>
                     </div>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="https://via.placeholder.com/500x400/e66?text=2" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 2</div>
-                        </div>
+                  <div class="col-md-3 px-3">
+                    <div class="card bg-dark">
+                      <div class="text-center d-flex align-items-baseline mb-1">
+                        <h5 class="card-title">John Doe</h5>
+                        <h6 class="card-subtitle text-muted ms-2">Nottingham, 36</h6>
+                      </div>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nesciunt nam doloribus sed pariatur ad iure nemo illum ratione, debitis ipsum delectus alias nisi placeat!
+                      </p>
                     </div>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="https://via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 3</div>
-                        </div>
+                  <div class="col-md-3 px-3">
+                    <div class="card bg-dark">
+                      <div class="text-center d-flex align-items-baseline mb-1">
+                        <h5 class="card-title">John Doe</h5>
+                        <h6 class="card-subtitle text-muted ms-2">Nottingham, 36</h6>
+                      </div>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nesciunt nam doloribus sed pariatur ad iure nemo illum ratione, debitis ipsum delectus alias nisi placeat!
+                      </p>
                     </div>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="https://via.placeholder.com/500x400?text=4" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 4</div>
-                        </div>
+                  <div class="col-md-3 px-3">
+                    <div class="card bg-dark">
+                      <div class="text-center d-flex align-items-baseline mb-1">
+                        <h5 class="card-title">John Doe</h5>
+                        <h6 class="card-subtitle text-muted ms-2">Nottingham, 36</h6>
+                      </div>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nesciunt nam doloribus sed pariatur ad iure nemo illum ratione, debitis ipsum delectus alias nisi placeat!
+                      </p>
                     </div>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="https://via.placeholder.com/500x400/aba?text=5" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 5</div>
-                        </div>
+                  <div class="col-md-3 px-3">
+                    <div class="card bg-dark">
+                      <div class="text-center d-flex align-items-baseline mb-1">
+                        <h5 class="card-title">John Doe</h5>
+                        <h6 class="card-subtitle text-muted ms-2">Nottingham, 36</h6>
+                      </div>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nesciunt nam doloribus sed pariatur ad iure nemo illum ratione, debitis ipsum delectus alias nisi placeat!
+                      </p>
                     </div>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="https://via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
-                            </div>
-                            <div class="card-img-overlay">Slide 6</div>
-                        </div>
+                  <div class="col-md-3 px-3">
+                    <div class="card bg-dark">
+                      <div class="text-center d-flex align-items-baseline mb-1">
+                        <h5 class="card-title">John Doe</h5>
+                        <h6 class="card-subtitle text-muted ms-2">Nottingham, 36</h6>
+                      </div>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nesciunt nam doloribus sed pariatur ad iure nemo illum ratione, debitis ipsum delectus alias nisi placeat!
+                      </p>
                     </div>
+                  </div>
                 </div>
             </div>
             <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
@@ -187,7 +203,6 @@
             </a>
         </div>
     </div>
-    <h5 class="mt-2 fw-light">advances one slide at a time</h5>
 </div>
 <!--faq-->
 <div class="container-xl bg-light text-dark">
@@ -230,47 +245,54 @@
 </div>
 <!--t&c-->
 <div class="container-xl d-flex justify-content-around">
-  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalTerms">Terms and conditions</button>
-  <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalPrivacy">Privacy Policy</button>
-  <div class="modal fade" id="modalTerms" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content bg-light text-dark">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Terms and conditions</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div>
+    <h3>Contact</h3>
+    <div id="map"></div>
+  </div>
+  <div>
+    <h6 data-bs-toggle="modal" data-bs-target="#modalTerms">Terms and conditions</h6>
+    <h6 data-bs-toggle="modal" data-bs-target="#modalPrivacy">Privacy Policy</h6>
+    <div class="modal fade" id="modalTerms" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-light text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Terms and conditions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae modi at, optio cum, sed aspernatur nesciunt sit praesentium ea vel similique dicta porro. Doloremque praesentium iure ut aliquam eveniet exercitationem beatae cumque quam, neque dolor, excepturi itaque ipsa, sint culpa error et possimus inventore. Autem, error corrupti architecto aspernatur deleniti asperiores sit consectetur facilis pariatur hic doloremque! Voluptatibus ducimus tempora ea accusamus at porro, aspernatur sint sed expedita dolores possimus quam eius corporis enim ipsam doloribus et eum voluptatem, numquam in! Reiciendis quasi earum obcaecati accusamus, eos facilis ex sunt neque impedit corrupti repellat alias ut perferendis architecto ducimus ipsum labore iusto veniam optio eius. Natus in temporibus, enim debitis accusamus necessitatibus, odit distinctio incidunt exercitationem laboriosam recusandae laudantium numquam voluptatum dolorum sapiente eos quasi praesentium aspernatur cumque fuga unde veritatis? Quas dolore assumenda, veritatis incidunt, id soluta a, eius fugiat aut at praesentium asperiores laudantium consectetur quos iusto velit voluptates dignissimos hic tempore quasi nihil quo numquam. Incidunt culpa ratione eos odit odio molestias et, non officia necessitatibus quisquam eveniet, alias consequuntur pariatur illo amet dolores cupiditate sapiente sed ipsa animi corporis ipsam in? Minus accusamus voluptatem aut inventore, dolorum esse qui, error recusandae perferendis eaque consectetur odit, cumque itaque voluptatum dolores dignissimos repellat. Impedit molestias iure voluptas atque, id vitae numquam! Obcaecati eveniet deserunt cupiditate recusandae! Totam consequuntur libero sapiente neque, doloremque perspiciatis corrupti, id maxime nemo soluta, nostrum eius repellendus ducimus tenetur? Ipsam quo enim dicta optio soluta sed sapiente, quasi nostrum similique voluptatem reiciendis doloribus deleniti, necessitatibus eveniet iste placeat voluptas officia culpa consectetur? Quo, velit magni porro eveniet doloribus repellat quis. Ab magnam quod adipisci in nihil eligendi molestiae nobis facere delectus error nam accusamus, praesentium consequuntur minus. Veritatis necessitatibus esse quod perferendis architecto odit ducimus? Eveniet quaerat ex architecto repellat ducimus necessitatibus asperiores laboriosam?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-        <div class="modal-body">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae modi at, optio cum, sed aspernatur nesciunt sit praesentium ea vel similique dicta porro. Doloremque praesentium iure ut aliquam eveniet exercitationem beatae cumque quam, neque dolor, excepturi itaque ipsa, sint culpa error et possimus inventore. Autem, error corrupti architecto aspernatur deleniti asperiores sit consectetur facilis pariatur hic doloremque! Voluptatibus ducimus tempora ea accusamus at porro, aspernatur sint sed expedita dolores possimus quam eius corporis enim ipsam doloribus et eum voluptatem, numquam in! Reiciendis quasi earum obcaecati accusamus, eos facilis ex sunt neque impedit corrupti repellat alias ut perferendis architecto ducimus ipsum labore iusto veniam optio eius. Natus in temporibus, enim debitis accusamus necessitatibus, odit distinctio incidunt exercitationem laboriosam recusandae laudantium numquam voluptatum dolorum sapiente eos quasi praesentium aspernatur cumque fuga unde veritatis? Quas dolore assumenda, veritatis incidunt, id soluta a, eius fugiat aut at praesentium asperiores laudantium consectetur quos iusto velit voluptates dignissimos hic tempore quasi nihil quo numquam. Incidunt culpa ratione eos odit odio molestias et, non officia necessitatibus quisquam eveniet, alias consequuntur pariatur illo amet dolores cupiditate sapiente sed ipsa animi corporis ipsam in? Minus accusamus voluptatem aut inventore, dolorum esse qui, error recusandae perferendis eaque consectetur odit, cumque itaque voluptatum dolores dignissimos repellat. Impedit molestias iure voluptas atque, id vitae numquam! Obcaecati eveniet deserunt cupiditate recusandae! Totam consequuntur libero sapiente neque, doloremque perspiciatis corrupti, id maxime nemo soluta, nostrum eius repellendus ducimus tenetur? Ipsam quo enim dicta optio soluta sed sapiente, quasi nostrum similique voluptatem reiciendis doloribus deleniti, necessitatibus eveniet iste placeat voluptas officia culpa consectetur? Quo, velit magni porro eveniet doloribus repellat quis. Ab magnam quod adipisci in nihil eligendi molestiae nobis facere delectus error nam accusamus, praesentium consequuntur minus. Veritatis necessitatibus esse quod perferendis architecto odit ducimus? Eveniet quaerat ex architecto repellat ducimus necessitatibus asperiores laboriosam?
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+    <div class="modal fade" id="modalPrivacy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-light text-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Privacy Policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae modi at, optio cum, sed aspernatur nesciunt sit praesentium ea vel similique dicta porro. Doloremque praesentium iure ut aliquam eveniet exercitationem beatae cumque quam, neque dolor, excepturi itaque ipsa, sint culpa error et possimus inventore. Autem, error corrupti architecto aspernatur deleniti asperiores sit consectetur facilis pariatur hic doloremque! Voluptatibus ducimus tempora ea accusamus at porro, aspernatur sint sed expedita dolores possimus quam eius corporis enim ipsam doloribus et eum voluptatem, numquam in! Reiciendis quasi earum obcaecati accusamus, eos facilis ex sunt neque impedit corrupti repellat alias ut perferendis architecto ducimus ipsum labore iusto veniam optio eius. Natus in temporibus, enim debitis accusamus necessitatibus, odit distinctio incidunt exercitationem laboriosam recusandae laudantium numquam voluptatum dolorum sapiente eos quasi praesentium aspernatur cumque fuga unde veritatis? Quas dolore assumenda, veritatis incidunt, id soluta a, eius fugiat aut at praesentium asperiores laudantium consectetur quos iusto velit voluptates dignissimos hic tempore quasi nihil quo numquam. Incidunt culpa ratione eos odit odio molestias et, non officia necessitatibus quisquam eveniet, alias consequuntur pariatur illo amet dolores cupiditate sapiente sed ipsa animi corporis ipsam in? Minus accusamus voluptatem aut inventore, dolorum esse qui, error recusandae perferendis eaque consectetur odit, cumque itaque voluptatum dolores dignissimos repellat. Impedit molestias iure voluptas atque, id vitae numquam! Obcaecati eveniet deserunt cupiditate recusandae! Totam consequuntur libero sapiente neque, doloremque perspiciatis corrupti, id maxime nemo soluta, nostrum eius repellendus ducimus tenetur? Ipsam quo enim dicta optio soluta sed sapiente, quasi nostrum similique voluptatem reiciendis doloribus deleniti, necessitatibus eveniet iste placeat voluptas officia culpa consectetur? Quo, velit magni porro eveniet doloribus repellat quis. Ab magnam quod adipisci in nihil eligendi molestiae nobis facere delectus error nam accusamus, praesentium consequuntur minus. Veritatis necessitatibus esse quod perferendis architecto odit ducimus? Eveniet quaerat ex architecto repellat ducimus necessitatibus asperiores laboriosam?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="modal fade" id="modalPrivacy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content bg-light text-dark">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Privacy Policy</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae modi at, optio cum, sed aspernatur nesciunt sit praesentium ea vel similique dicta porro. Doloremque praesentium iure ut aliquam eveniet exercitationem beatae cumque quam, neque dolor, excepturi itaque ipsa, sint culpa error et possimus inventore. Autem, error corrupti architecto aspernatur deleniti asperiores sit consectetur facilis pariatur hic doloremque! Voluptatibus ducimus tempora ea accusamus at porro, aspernatur sint sed expedita dolores possimus quam eius corporis enim ipsam doloribus et eum voluptatem, numquam in! Reiciendis quasi earum obcaecati accusamus, eos facilis ex sunt neque impedit corrupti repellat alias ut perferendis architecto ducimus ipsum labore iusto veniam optio eius. Natus in temporibus, enim debitis accusamus necessitatibus, odit distinctio incidunt exercitationem laboriosam recusandae laudantium numquam voluptatum dolorum sapiente eos quasi praesentium aspernatur cumque fuga unde veritatis? Quas dolore assumenda, veritatis incidunt, id soluta a, eius fugiat aut at praesentium asperiores laudantium consectetur quos iusto velit voluptates dignissimos hic tempore quasi nihil quo numquam. Incidunt culpa ratione eos odit odio molestias et, non officia necessitatibus quisquam eveniet, alias consequuntur pariatur illo amet dolores cupiditate sapiente sed ipsa animi corporis ipsam in? Minus accusamus voluptatem aut inventore, dolorum esse qui, error recusandae perferendis eaque consectetur odit, cumque itaque voluptatum dolores dignissimos repellat. Impedit molestias iure voluptas atque, id vitae numquam! Obcaecati eveniet deserunt cupiditate recusandae! Totam consequuntur libero sapiente neque, doloremque perspiciatis corrupti, id maxime nemo soluta, nostrum eius repellendus ducimus tenetur? Ipsam quo enim dicta optio soluta sed sapiente, quasi nostrum similique voluptatem reiciendis doloribus deleniti, necessitatibus eveniet iste placeat voluptas officia culpa consectetur? Quo, velit magni porro eveniet doloribus repellat quis. Ab magnam quod adipisci in nihil eligendi molestiae nobis facere delectus error nam accusamus, praesentium consequuntur minus. Veritatis necessitatibus esse quod perferendis architecto odit ducimus? Eveniet quaerat ex architecto repellat ducimus necessitatibus asperiores laboriosam?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+
 <!--footer-->
-<footer>Copyright Austin Cheung 2022</footer>
+<footer class="text-center">Copyright Austin Cheung 2022</footer>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDALG3hhzQMon4hupAjYDVC_7QhVytJsRI&callback=initMap&v=weekly" defer></script>
 <script src="app.js"></script>
 </body>
 </html>

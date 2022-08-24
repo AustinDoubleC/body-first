@@ -15,6 +15,7 @@ const database = firebase.database()
 const btnLogin = document.getElementById("btn-login")
 const errorMsg = document.getElementById("error-message")
 const items = document.querySelectorAll('.carousel .carousel-item')
+let map; //for google map
 
 //event listener
 btnLogin.addEventListener("click",()=>{login()})
@@ -87,3 +88,19 @@ function login () {
   function register(){
     window.location = "./register/"
   }
+
+
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 52.91568230713185, lng:-1.2326348404747955},
+    zoom: 13,
+  });
+  var marker = new google.maps.Marker({
+    position: { lat: 52.91568230713185, lng:-1.2326348404747955},
+    title:"Body First"
+});
+marker.setMap(map);
+}
+
+window.initMap = initMap;

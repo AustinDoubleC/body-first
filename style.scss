@@ -1,3 +1,8 @@
+//customize bootstrap variables
+$primary: #F4BB44;
+//import bootstrap css
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
 body{
   margin:0;
   padding:0;
@@ -10,8 +15,15 @@ body{
 .premium-plan{
   height: 300px;
 }
+.navbar{
+  font-weight: bold;
+}
 .navbar-nav{
   align-items: baseline;
+}
+#map {
+  height: 300px;
+  width: 300px;
 }
 
 //Carousel
