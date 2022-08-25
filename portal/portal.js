@@ -38,7 +38,7 @@ if (username){
   getUserData()
 }else{
   console.log("Not logged in")
-  window.location.href="../"
+  //window.location.href="../"
 }
 
 
