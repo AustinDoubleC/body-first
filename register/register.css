@@ -10927,4 +10927,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #F4BB44;
+}
+
+h1, .h1 {
+  text-align: center;
 }/*# sourceMappingURL=register.css.map */
