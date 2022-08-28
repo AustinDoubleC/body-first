@@ -9,6 +9,23 @@ body{
   box-sizing: border-box;
   background-color: #333;
 }
+nav{
+  background-color: #111;
+  opacity: 0.7;
+}
+.welcome{
+  background-image: url('/image/gym.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(-70px);
+  .login-outer{
+    margin-top: 70px;
+  }
+  .promo-outer{
+    margin-top: 70px;
+  }
+}
 .normal-plan{
   height: 250px;
 }
