@@ -10948,6 +10948,12 @@ nav {
   margin-top: 70px;
 }
 
+.prog-img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .normal-plan {
   height: 250px;
 }
