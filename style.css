@@ -10934,18 +10934,8 @@ nav {
   opacity: 0.7;
 }
 
-.welcome {
-  background-image: url("/image/gym.jpg");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translateY(-70px);
-}
-.welcome .login-outer {
-  margin-top: 70px;
-}
-.welcome .promo-outer {
-  margin-top: 70px;
+#hero {
+  background-image: url(image/gym.jpg);
 }
 
 .prog-img {

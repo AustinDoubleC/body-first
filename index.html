@@ -9,60 +9,66 @@
   <title>Body First</title>
 </head>
 <body>
-  <!--Nav-->
-  <nav class="navbar px-2 sticky-top navbar-expand-md bg-none navbar-dark" style="height:70px">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Body First</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse mx-5 justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item mx-5">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item mx-5">
-            <a class="nav-link" href="#">Programs</a>
-          </li>
-          <li class="nav-item mx-5">
-            <h6 data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Result</h6>
-          </li>
-          <li class="nav-item mx-5">
-            <a class="nav-link" href="#">Plans</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--hamburger menu-->
-  <div class="offcanvas offcanvas-bottom bg-dark text-light" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" style="height:400px">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body small">...</div>
-  </div>
-  <div class="welcome d-flex">    
-    <!--Login-->
-    <div class="text-dark col-6 login-outer">
-      <h3>Member Login</h3>
-      <div id="login-inner">
-        <div id="form-container">
-          <input type="email"placeholder="email" id="email"/>
-          <input type="password" placeholder="password" id="password">
-          <button id="btn-login">Login</button>
-          <p id="error-message"></p>
-        </div>
-        <div id="joinus-container">
-          <p>Not a member yet?</p>
-          <button onclick="register()">Join us</button>
+  <!--Hero section-->
+  <section id="hero" class="d-flex flex-column justify-content-between">
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+      <div class="container fw-bold">
+        <a class="navbar-brand" href="">
+          <h3 class="d-inline-block align-text-top fw-bold">Body First</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Programs
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-white" href="">Program A</a></li>
+                <li><a class="dropdown-item text-white" href="">Program B</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Plans
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-white" href="">Plan A</a></li>
+                <li><a class="dropdown-item text-white" href="">Plan B</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="">See Result</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="">Contact Us</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <!--Hero content-->
+    <div class="hero-content d-flex align-items-center p-2 bg-secondary text-white flex-lg-column align-items-lg-start offset-lg-9 col-lg-3 p-lg-4">
+      <div class="text-dark col-6 login-outer">
+        <h3>Member Login</h3>
+        <div id="login-inner">
+          <div id="form-container">
+            <input type="email"placeholder="email" id="email"/>
+            <input type="password" placeholder="password" id="password">
+            <button id="btn-login">Login</button>
+            <p id="error-message"></p>
+          </div>
+          <div id="joinus-container">
+            <p>Not a member yet?</p>
+            <button onclick="register()">Join us</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="promo-outer col-6">
-
-    </div>
-  </div>
+  </section>
 
   <!--Programs-->
   <div class="container-xl">
